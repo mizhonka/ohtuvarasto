@@ -52,6 +52,7 @@ class TestVarasto(unittest.TestCase):
         v=Varasto(-15)
         self.assertAlmostEqual(v.tilavuus, 0)
 
+    #negatiivinen luku
     def test_virheellinen_alku_saldo(self):
         v=Varasto(10, -10)
         self.assertAlmostEqual(v.saldo, 0)
